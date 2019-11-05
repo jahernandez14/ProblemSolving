@@ -1,6 +1,8 @@
 #################################################################
 #################################################################
 # 1 twoSum
+# problem was used using a hash set. Since there is only one possible
+# result i search the set for the only possible pair
 
 def twoSum():
     nums = [2, 7, 11, 15]
@@ -17,6 +19,7 @@ def twoSum():
 #################################################################
 #################################################################
 # 2 Repeated Numbers
+# I search the set and if an element already exists i print it out
 
 def repeat():
     nums = [3, 4, 6, 1, 3, 10, -1]
@@ -30,6 +33,9 @@ def repeat():
 #################################################################
 #################################################################
 # 3 Most Common Words
+# This one was a little more challenging and had to use a map
+# instead. If the element already exists i increment and at the end
+# just print the element with the largest value.
 
 def common():
     str = "hello hi hello hello ten hello"
@@ -48,7 +54,8 @@ def common():
 
 #################################################################
 #################################################################
-# 3 Single Number
+# 4 Single Number
+# same thing as the previous problem but this time we return the minimum
 
 def single():
     nums = [4, 1, 2, 1, 2]
@@ -66,6 +73,10 @@ def single():
 #################################################################
 #################################################################
 # 5 Keyboard Problem
+# Add each row into a different hash set and check of the first char
+# appears in the set. If it does check every char and if any fail
+# return false, if all pass then return true
+
 
 def hashKeyboard(word):
     top = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p"}
@@ -99,6 +110,10 @@ def keyboard():
 
 #################################################################
 # 6 Word Differences
+# I am iffy about this one because i use a set method. Im not sure
+# if that is permitted. I compare the sets and print the differences.
+
+
 def addToSet(obj):
     hashSet = set()
     for i in obj:
