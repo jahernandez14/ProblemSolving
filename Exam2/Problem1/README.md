@@ -1,5 +1,4 @@
 ## Stone Game
-======================================================================================
 
 * This problem immediately displays a need for dynamic programming. In order to win the player must consider the 
 multiple options and routes to take in order to win. Its proven mathematically that as long as player one makes the 
