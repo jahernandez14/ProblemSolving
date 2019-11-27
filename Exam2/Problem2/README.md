@@ -1,0 +1,4 @@
+##	Minimum falling path sum
+*	This problem needs to acquire the minimum path through a 2D array. It is very similar to the edit distance problem and it reuses the space provided. The problem is that the minimum number per array must be acquired without constant iteration. It displays recursive properties when in pops the array and then traverses it to find the minimum. In doing so you add the minimum to your lowest sum and then you also add the next minimum to your next list. In essence you are keeping track of the minimum, 2nd minimum, and your max list. Once you pop all but one list you return the sum of the minimum sum.
+*	In this solution it uses the given array to store the sums (the array that is not popped). In doing so you save space and you also save the sum of each route. Lastly, just returning the minimum sum. I didn’t learn that by using -1 you ensure you return the correct address despite the pop operation.
+*	G
